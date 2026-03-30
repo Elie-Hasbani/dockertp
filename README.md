@@ -72,7 +72,16 @@ Both scripts:
 - pull the required model
 - print a success banner when everything is ready
 
+## Note For Linux Users
+
+you can avoid docker desktop and install Docker Model Runner like this
+
+ ``` apt-get update
+     apt-get install docker-model-plugin```
+
+
 ## Note For Windows Users
+
 
 If you use Docker Desktop with WSL2, it can be useful to create a `.wslconfig`
 file in your Windows user profile directory and add the following content:
