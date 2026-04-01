@@ -1,0 +1,21 @@
+services:
+  narrative:
+    build: ./narrative
+    ports:
+      - "8181:8181"
+  web2:
+    build: ./web2
+    ports:
+      - "8000:8000"
+  words:
+    build: ./words
+    ports:
+      - "8080:8080"
+  db:
+    build: ./db
+    ports:
+      - "5432:5432"
+
+models:
+  llm:
+    model: ai/smollm2
